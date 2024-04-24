@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Audio  and Video files</title> 
+    </head>
+    <body>
+        <h1>Audio</h1>
+        <audio src="wav-recording.mp3" controls>
+            This browser doesn't support audio
+        </audio>
+        <br>
+        <h1>Audio files in multiple format</h1>
+        <!--this helps to choose any of the working file format-->
+        <audio controls>
+            <source src="recording.mp3" type="audio/mp3"/>
+            <source src="recording.wav" type="audio/wav"/>
+            <source src="recording.m4a" type="audio/m4a"/>
+        </audio>
+
+        <h1>Video</h1>
+        <video src="video.avi" controls width="250">
+            This browser doesn't support video 
+        </video>
+        
+        <h1>Multiple formats</h1>
+        <video controls width="450">
+            <source src="recording.avi" type="video/avi"/>
+            <source src="recording.mp4" type="video/mp4"/>
+            <source src="recording.mpeg4" type="video/mpeg4"/>
+        </audio>
+    </body>
+</html>

@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <h2>Login Form</h2>
+        <form method="POST" action="">
+            <!--post method is used to secure the data when transfering data from web to server
+            action attribute is to tell where the data need to be submitted-->
+            <p>
+                Username:
+                <br>
+                <input type="text" name="username" placeholder="Username" size="9" maxlength="20">
+                <!--name attribute is used to know the which data is for which field
+                size attribute is used to define the length to display input
+                maxlength attribute define the length of input if maxlength is 4 the the input should not exceed 4-->
+            </p>
+            <p>
+                Password:
+                <br>
+                <input type="password" name="password" placeholder="Password"size="9" maxlength="20">
+                <!--password type is used to mask the values-->
+            </p>
+            <p>
+                Gender:<br>
+                <input type="radio" name="gender">Male<br>
+                <input type="radio" name="gender"> Female
+                <!--name should be same so that user can select any one-->
+            </p>
+            <p>
+                I want to learn first:<br>
+                <input type="radio" name="learn" checked>HTML<br>
+                <input type="radio" name="learn" >CSS<br>
+                <input type="radio" name="learn" >JS<br>
+                <!-- here checked determine the default value-->
+            </p>
+            <p>
+                Hobbies: <br>
+                <input type="checkbox" name="hobby[]" value="photography">Photography<br>
+                <input type="checkbox" name="hobby[]" value="video game">video gaming<br>
+                <input type="checkbox" name="hobby[]" value="drawing">Drawing<br>
+                <input type="checkbox" name="hobby[]" value="dance">Dancing<br>
+                <input type="checkbox" name="hobby[]" value="sports">Sports<br>
+
+            </p>
+            <p>
+                Select your Date Of Birth:<br>
+                <select name="dob" id="dob">
+                    <option value="">Select Date</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7" selected>7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+
+            </p>
+            <p>
+                I want to join training for<br>
+                <select name="sports" id="sports" multiple>
+                    <option name="basketball">BasketBall</option>
+                    <option name="hockey">Hockey</option>
+                    <option name="chess">Chess</option>
+                    <option name="cricket">Cricket</option>
+                </select>
+            </p>
+
+            <p>
+                <input type="submit" name="submit"value="Send">
+                <!-- value attribute is used to set default value-->
+            </p>
+            
+        </form>
+    </body>
+</html>
